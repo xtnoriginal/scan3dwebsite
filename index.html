@@ -1,9 +1,4 @@
-s<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Scan3D </title>
@@ -32,9 +27,9 @@ s<!DOCTYPE HTML>
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Context</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">3D Slicing</span></a></li>
-								<li><a href="#about_FE" id="about-link"><span class="icon solid fa-user">Feature Line</span></a></li>
-								<li><a href="#portfolioD" id="portfolio-link"><span class="icon solid fa-th">Downloads</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-building">3D Slicing</span></a></li>
+								<li><a href="#about_FE" id="about-link"><span class="icon solid fa-square">Feature Line</span></a></li>
+								<li><a href="#portfolioD" id="portfolio-link"><span class="icon solid fa-download">Downloads</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -76,10 +71,8 @@ s<!DOCTYPE HTML>
 								<h2>Context</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>The growth of the 3D laser-scanning and modelling industry in the last 20 years has led to the need for different strategies to analyse, create and process 3D models. The Zamani Project (www.zamaniproject.org) requires a tool for the creation of layouts/diagrams of sections, elevations, top views and ground plans and other generic views from 3D laser-scan heritage sites. The two projects shown here tackle feature line extraction and 3D slicing for the models.
+							</p>
 
 
 						</div>
@@ -93,14 +86,76 @@ s<!DOCTYPE HTML>
 								<h2>3D Slicing</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<header>
+								<h3> Introduction</h3>
+							</header>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>The building of structures is a field within engineering and architecture that has provided civilians with shelter for certain purposes
+								for many generations. These shelters vary such as houses, mosques,
+								pyramids, city halls and more. These structures are built from
+								plans/blueprints usually drawn up by architects then engineers
+								build the structure. In the past, there plans were drawn informally
+								relative to the present or not at all, and they went directly into the
+								building process. In the present, we require drawings or images of
+								the structures build in the past for referencing or studying. This is
+								where the Zamani Project using three-dimensional lasers-canning
+								of the structure in to models that can be referenced.
+								Laser scanning is a technique used by the Zamani Project to
+								model three-dimensional images of heritage sites around Africa and
+								some in Eurasia. These heritage sites include Castle of Good Hope,
+								Wonderwerk Cave, a Great Zimbabwe complex and many more.
+								The Zamani Project uses these laser scanned images to preserve
+								heritage sites because the sites over time deteriorate and, historians
+								and other professions need to study/alter these structures</p>
+
+							<header>
+								<h3>Implementation</h3>
+							</header>
+
+							<p>The project requires the use of some API/libraries in Python, namely
+								𝑂𝑝𝑒𝑛3𝐷, numpy, matplotlib and Pillow . These can be installed using the package installer pip, but after installing the usage on the package is dependent
+								on the Python version utilises for the project. 𝑂𝑝𝑒𝑛3𝐷 has the following support only on Python, version 3.6 to 3.8. Also the 𝑂𝑝𝑒𝑛3𝐷
+								package has limited usage on some operating systems. The project
+								also requires the use of Meshlab. Meshlab works as an easy visualization tool for users as its setup is heavily focused on the efficiency
+								in processing through its interface. Currently, there seems to be
+								not API/libraries in python that handle the procedure similarly to
+								Meshlab.
+							</p>
+
+							<header>
+								<h4>Architecture Diagram</h4>
+							</header>
+
+							<p>A simple GUI interface is used for better usability when selecting a 3D mesh made from pysimplegui.</p>
+
+							<a href="#" class="image featured"><img src="images/Architecture diagram (1).png" alt="" /></a>
+
+							<header>
+								<h3>Sample output</h3>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/Screenshot (193).png" alt="" /></a>
+
+							<header>
+								<h3>Conclusions</h3>
+							</header>
+
+							<p>The quality of the produced images is dependent on a hardware component, the screen resolution. When the window pops
+								up to capture in image, there are only a limited number of pixels
+								a desktop/laptop can capture. Higher resolution screen can assist
+								in capturing the finer details of an image as they will have more
+								pixels. Also as a weakness of 𝑂𝑝𝑒𝑛3𝐷, there is no direct production
+								of a TIFF format image when capturing the screen. This may lead
+								to additional loss of quality in the image due to it requiring further
+								processing.
+								The presentation of the produced images could be done much
+								better using great image processing system for things like the scale
+								bar, border around these images, and section and elevation lines
+								on the floor plan/top view rather than using 𝑚𝑎𝑡𝑝𝑙𝑜𝑡𝑙𝑖𝑏 or plotting
+								them manually.
+								More on the conclusions can be read on the final paper.
+							</p>
+
 
 						</div>
 					</section>
@@ -113,14 +168,12 @@ s<!DOCTYPE HTML>
 								<h2>Feature Line Extraction</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/fandisk.png" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>The aim of the project is to produce a tool to extract feature lines  from 3D models. The solution should be  robust to noise and rough surfaces and should allow the user to control the feature lines produced. Tensor voting algorithm was implemented in python and tested on various models.
+								Feature lines as shown above were generated in which the shape of the model could be perceived. After testing the algorithm it produced expected on various complex shapes.
+								However , further work needs to be done to improve the algorithm for it to work on heritage sites. The data to test the algorithm was tested on the algorithm was acquired from the  Zamani project.
+							</p>
 
 						</div>
 					</section>
@@ -140,55 +193,55 @@ s<!DOCTYPE HTML>
 						<div class="row">
 							<div class="col-4 col-12-mobile">
 								<article class="item">
-									<object data="File/x.pdf" type="application/pdf" width="100%" height="75%">
+									<object data="File/LitReview.pdf" type="application/pdf" width="100%" height="75%">
 										assets/pdfs/DLOGs_Project_Proposal_Amended.pdf
 									</object>
 									<header>
-										<h3>literature review Claudious Nhemwa</h3>
+										<h3>Literature Review Claudious Nhemwa</h3>
 									</header>
 								</article>
 								<article class="item">
-									<object data="File/x.pdf" type="application/pdf" width="100%" height="75%">
-										assets/pdfs/DLOGs_Project_Proposal_Amended.pdf
+									<object data="File/Final%20paper%20NHMCLA003.pdf" type="application/pdf" width="100%" height="75%">
+										assets/pdfs/
 									</object>
 									<header>
-										<h3>literature review Sizwe Zwane</h3>
-									</header>
-								</article>
-							</div>
-							<div class="col-4 col-12-mobile">
-								<article class="item">
-									<object data="File/x.pdf" type="application/pdf" width="100%" height="75%">
-										assets/pdfs/DLOGs_Project_Proposal_Amended.pdf
-									</object>
-									<header>
-										<h3>Magna Nullam</h3>
-									</header>
-								</article>
-								<article class="item">
-									<object data="File/x.pdf" type="application/pdf" width="100%" height="75%">
-										assets/pdfs/DLOGs_Project_Proposal_Amended.pdf
-									</object>
-									<header>
-										<h3>Natoque Vitae</h3>
+										<h3>Final Paper Feature Line extraction</h3>
 									</header>
 								</article>
 							</div>
 							<div class="col-4 col-12-mobile">
 								<article class="item">
-									<object data="File/x.pdf" type="application/pdf" width="100%" height="75%">
+									<object data="File/ZWNSIZ002_literature_review.pdf" type="application/pdf" width="100%" height="75%">
 										assets/pdfs/DLOGs_Project_Proposal_Amended.pdf
 									</object>
 									<header>
-										<h3>Dolor Penatibus</h3>
+										<h3>Literature Review Sizwe Zwane</h3>
 									</header>
 								</article>
 								<article class="item">
-									<object data="File/x.pdf" type="application/pdf" width="100%" height="75%">
+									<object data="File/ZWNSIZ002_finalProjectPaper%20(1).pdf" type="application/pdf" width="100%" height="75%">
 										assets/pdfs/DLOGs_Project_Proposal_Amended.pdf
 									</object>
 									<header>
-										<h3>Orci Convallis</h3>
+										<h3>Final Paper 3D Slicing</h3>
+									</header>
+								</article>
+							</div>
+							<div class="col-4 col-12-mobile">
+								<article class="item">
+									<object data="File/Proposal___Claudious_and_Sizwe.pdf" type="application/pdf" width="100%" height="75%">
+										assets/pdfs/DLOGs_Project_Proposal_Amended.pdf
+									</object>
+									<header>
+										<h3>Project Proposal</h3>
+									</header>
+								</article>
+								<article class="item">
+									<object data="File/poster.pdf" type="application/pdf" width="100%" height="75%">
+										assets/pdfs/DLOGs_Project_Proposal_Amended.pdf
+									</object>
+									<header>
+										<h3>Project Poster</h3>
 									</header>
 								</article>
 							</div>
@@ -205,10 +258,23 @@ s<!DOCTYPE HTML>
 								<h2>Contact</h2>
 							</header>
 
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+
+							<a href="#" class="image featured"><img src="images/headerc.jpeg" alt="" /></a>
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<h3>Sizwe Zwane</h3>
+									<h5>E-MAIL : ZWNSIZ002@myuct.ac.za</h5>
+
+								</div>
+								<div class="col-4 col-12-mobile">
+									<h3>Claudious Nhemwa</h3>
+									<h5>E-MAIL : NHMCLA003@myuct.ac.za</h5>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<h3>Department Of Computer Science</h3>
+									<h5>E-MAIL : dept@cs.uct.ac.za</h5>
+								</div>
+							</div>
 
 
 
