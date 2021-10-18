@@ -93,14 +93,76 @@ s<!DOCTYPE HTML>
 								<h2>3D Slicing</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<header>
+								<h3> Introduction</h3>
+							</header>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>The building of structures is a field within engineering and architecture that has provided civilians with shelter for certain purposes
+								for many generations. These shelters vary such as houses, mosques,
+								pyramids, city halls and more. These structures are built from
+								plans/blueprints usually drawn up by architects then engineers
+								build the structure. In the past, there plans were drawn informally
+								relative to the present or not at all, and they went directly into the
+								building process. In the present, we require drawings or images of
+								the structures build in the past for referencing or studying. This is
+								where the Zamani Project using three-dimensional lasers-canning
+								of the structure in to models that can be referenced.
+								Laser scanning is a technique used by the Zamani Project to
+								model three-dimensional images of heritage sites around Africa and
+								some in Eurasia. These heritage sites include Castle of Good Hope,
+								Wonderwerk Cave, a Great Zimbabwe complex and many more.
+								The Zamani Project uses these laser scanned images to preserve
+								heritage sites because the sites over time deteriorate and, historians
+								and other professions need to study/alter these structures</p>
+
+							<header>
+								<h3>Implementation</h3>
+							</header>
+
+							<p>The project requires the use of some API/libraries in Python, namely
+								𝑂𝑝𝑒𝑛3𝐷, numpy, matplotlib and Pillow . These can be installed using the package installer pip, but after installing the usage on the package is dependent
+								on the Python version utilises for the project. 𝑂𝑝𝑒𝑛3𝐷 has the following support only on Python, version 3.6 to 3.8. Also the 𝑂𝑝𝑒𝑛3𝐷
+								package has limited usage on some operating systems. The project
+								also requires the use of Meshlab. Meshlab works as an easy visualization tool for users as its setup is heavily focused on the efficiency
+								in processing through its interface. Currently, there seems to be
+								not API/libraries in python that handle the procedure similarly to
+								Meshlab.
+							</p>
+
+							<header>
+								<h4>Architecture Diagram</h4>
+							</header>
+
+							<p>A simple GUI interface is used for better usability when selecting a 3D mesh made from pysimplegui.</p>
+
+							<a href="#" class="image featured"><img src="images/Architecture diagram (1).png" alt="" /></a>
+
+							<header>
+								<h3>Sample output</h3>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/Screenshot (193).png" alt="" /></a>
+
+							<header>
+								<h3>Conclusions</h3>
+							</header>
+
+							<p>The quality of the produced images is dependent on a hardware component, the screen resolution. When the window pops
+								up to capture in image, there are only a limited number of pixels
+								a desktop/laptop can capture. Higher resolution screen can assist
+								in capturing the finer details of an image as they will have more
+								pixels. Also as a weakness of 𝑂𝑝𝑒𝑛3𝐷, there is no direct production
+								of a TIFF format image when capturing the screen. This may lead
+								to additional loss of quality in the image due to it requiring further
+								processing.
+								The presentation of the produced images could be done much
+								better using great image processing system for things like the scale
+								bar, border around these images, and section and elevation lines
+								on the floor plan/top view rather than using 𝑚𝑎𝑡𝑝𝑙𝑜𝑡𝑙𝑖𝑏 or plotting
+								them manually.
+								More on the conclusions can be read on the final paper.
+							</p>
+
 
 						</div>
 					</section>
